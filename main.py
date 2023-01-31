@@ -82,14 +82,14 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_config_path', type=str, default='./config/train_pems04_speed.yaml',
+    parser.add_argument('--model_config_path', type=str, default='./config/train_pems04.yaml',
                         help='Config path of models')
     parser.add_argument('--train_config_path', type=str, default='./config/train_config.yaml',
                         help='Config path of Trainer')
     parser.add_argument('--model_name', type=str, default='AdapGLA', help='Model name to train')
     parser.add_argument('--num_epoch', type=int, default=5, help='Training times per epoch')
     parser.add_argument('--num_iter', type=int, default=20, help='Maximum value for iteration')
-    parser.add_argument('--model_save_path', type=str, default='./model_states/AdapGLA_pems08_speed.pkl',
+    parser.add_argument('--model_save_path', type=str, default='./model_states/AdapGLA_pems08.pkl',
                         help='Model save path')
     parser.add_argument('--max_graph_num', type=int, default=3, help='Volume of adjacency matrix set')
     args = parser.parse_args()
